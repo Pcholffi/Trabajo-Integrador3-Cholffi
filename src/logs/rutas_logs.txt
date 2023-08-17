@@ -21,3 +21,19 @@ la ruta ingresada es /products/listar
 01:29:05 - la ruta ingresada GET /products/listar
 01:31:55 - la ruta ingresada GET /products/listar
 25/7/2023, 01:38:41 - la ruta ingresada es: /products/detalle
+25/7/2023, 21:52:41 - la ruta ingresada es: /products/detalle
+25/7/2023, 21:52:49 - la ruta ingresada es: /products/listar
+25/7/2023, 22:00:57 - la ruta ingresada es: /products/buscar?nombre=cepillo
+25/7/2023, 22:01:54 - la ruta ingresada es: /products/buscar?nombre=cepillo
+25/7/2023, 22:03:45 - la ruta ingresada es: /products/buscar?nombre=cepillo
+27/7/2023, 14:15:44 - la ruta ingresada es: /products/listar
+27/7/2023, 14:16:48 - la ruta ingresada es: /products/detalle
+27/7/2023, 14:18:55 - la ruta ingresada es: /products/listar
+16/8/2023, 20:52:23 - la ruta ingresada es: /products/listar
+16/8/2023, 20:54:35 - la ruta ingresada es: /products/listar
+16/8/2023, 20:55:17 - la ruta ingresada es: /products/listar
+16/8/2023, 21:33:32 - la ruta ingresada es: /products/crear
+16/8/2023, 21:36:41 - la ruta ingresada es: /products/detalle/64dd6adc58c868a281564f8a
+16/8/2023, 21:37:52 - la ruta ingresada es: /products/detalle/64dd6adc58c868a281564f8a
+16/8/2023, 21:41:34 - la ruta ingresada es: /products/detalle/64dd6adc58c868a281564f8a
+16/8/2023, 21:42:17 - la ruta ingresada es: /products/detalle/64dd6adc58c868a281564f8a

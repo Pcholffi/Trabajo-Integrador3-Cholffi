@@ -5,7 +5,7 @@ node ./src/app.js
 ```
 o
 ```
-nodemon
+npx nodemon
 ````
 
 ```

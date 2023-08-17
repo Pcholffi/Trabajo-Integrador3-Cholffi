@@ -1,0 +1,45 @@
+/* para los js.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2 {
+    color: #333;
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  label, input, textarea, button {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .product-card img {
+    max-width: 100px;
+  }
+  
+  .search-form {
+    margin-top: 20px;
+  }

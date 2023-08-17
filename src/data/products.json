@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "name": "Set de Destornilladores de Precisión",
         "description": "Un conjunto de destornilladores de precisión con diversas puntas para reparar teléfonos celulares y computadoras.",
         "category": "Herramientas",
@@ -8,7 +7,6 @@
         "image": "set_destornilladores.jpg"
     },
     {
-        "id": 2,
         "name": "Correa de Muñeca Antiestática",
         "description": "Una correa de muñeca antiestática para evitar descargas electrostáticas durante las reparaciones electrónicas.",
         "category": "Herramientas",
@@ -16,7 +14,6 @@
         "image": "correa_antiestatica.jpeg"
     },
     {
-        "id": 3,
         "name": "Pistola de Calor",
         "description": "Una pistola de calor para soldar y desoldar componentes electrónicos en placas de PC y smartphones.",
         "category": "Herramientas",
@@ -24,7 +21,6 @@
         "image": "pistola_calor.jpeg"
     },
     {
-        "id": 4,
         "name": "Set de Herramientas Spudger",
         "description": "Un conjunto de herramientas spudger para abrir dispositivos y trabajar con componentes delicados.",
         "category": "Herramientas",
@@ -32,7 +28,6 @@
         "image": "set_spudger.jpg"
     },
     {
-        "id": 5,
         "name": "Kit de Soldadura",
         "description": "Un kit de soldadura con diferentes puntas y alambre de soldar para trabajos de soldadura en dispositivos electrónicos.",
         "category": "Herramientas",
@@ -40,7 +35,6 @@
         "image": "kit_soldadura.jpg"
     },
     {
-        "id": 6,
         "name": "Set de Herramientas de Apertura",
         "description": "Un conjunto de herramientas de apertura para abrir smartphones y PCs sin dañar la carcasa.",
         "category": "Herramientas",
@@ -48,7 +42,6 @@
         "image": "set_herramientas_apertura.jpeg"
     },
     {
-        "id": 7,
         "name": "Cepillo de Limpieza ESD",
         "description": "Un cepillo de limpieza ESD para eliminar el polvo y la suciedad de componentes electrónicos y PCBs.",
         "category": "Limpieza",
@@ -56,7 +49,6 @@
         "image": "cepillo_limpieza.jpg"
     },
     {
-        "id": 8,
         "name": "Paño de Limpieza de Microfibra",
         "description": "Un paño de limpieza de microfibra para limpiar pantallas y superficies de smartphones y PCs.",
         "category": "Limpieza",
@@ -64,20 +56,10 @@
         "image": "pano_limpieza.jpeg"
     },
     {
-        "id": 9,
         "name": "Cepillo de Limpieza Antiestático",
-        "description": "Un cepillo de limpieza antiestático para eliminar el polvo y los residuos de componentes electrónicos.",
+        "description": "Un cepillo de limpieza antiestático para eliminar el polvo y lose componentes electrónicos.",
         "category": "Limpieza",
         "price": 3117.8,
         "image": "cepillo_antiestatico.jpg"
-    },
-    {
-        "id": 10
-    },
-    {
-        "id": 11
-    },
-    {
-        "id": 13
     }
 ]
