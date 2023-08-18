@@ -1,4 +1,4 @@
-/*-----------para el historial en txt con hora------------------**********************-*/
+/*-----------para errores historial en txt con hora------------------**********************-*/
 const path = require('path');
 const fs = require('fs');
 const errorlogs = (error, req, res, next) => {

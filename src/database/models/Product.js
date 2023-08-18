@@ -18,9 +18,10 @@ const productSchema = new mongoose.Schema({
 },
     image: String,
 }, {
-    timestamps: true // poner los datos de creacion y actualizacion
+    timestamps: true, // poner los datos de creacion y actualizacion
+    collection: 'products'
 });
-//Collection = 'Product'
+
 const Product = mongoose.model('Product', productSchema);
 
 module.exports = Product

@@ -2,10 +2,11 @@
 const path = require('path');
 const fs = require('fs');
 const Product = require('../database/models/Product'); // Asegúrate de importar el modelo Product o el modelo adecuado
+const { Error } = require('mongoose');
 
-const ruta = path.resolve(__dirname, '../data/products.json');
-const jsonProducts = fs.readFileSync(ruta, { encoding: 'utf-8' });
-let products = JSON.parse(jsonProducts);
+//const ruta = path.resolve(__dirname, '../data/products.json');
+//const jsonProducts = fs.readFileSync(ruta, { encoding: 'utf-8' });
+//let products = JSON.parse(jsonProducts);
 
 const controller = {
   listar: async (req, res) => {
@@ -32,19 +33,18 @@ const controller = {
         discount: req.body.discount,
         category: req.body.category,
         description: req.body.description,
-        image: req.file.filename,
-        //colors: ['Negro', 'Rojo', 'Gris'],
+        image: req.file? req.file.filename : '',
+        colors: ['Negro', 'Rojo', 'Gris'],
       };
 
       const productDatabase = await Product.create(product); // Utiliza el modelo para crear un nuevo producto en la base de datos
       res.status(201).json(productDatabase);
     } catch (error) {
-      if (error.errors.name) {
-        return res.status(400).json({ message: 'Falta el campo name' });
-      }
+      console.log(error)
       res.status(500).json({ message: 'Internal server error' });
     }
   },
+
   update: async (req, res) => {
     try {
       const product = await Product.findById(req.params.id);
@@ -76,6 +76,7 @@ const controller = {
     const response = { msg: `Producto con ID ${productId} eliminado exitosamente.`, producto: productoEliminado[0] };
     res.json(response);
   },
+  
   buscar: async (req, res) => {
     try {
       const searchTerm = req.query.term;
@@ -83,15 +84,17 @@ const controller = {
       const results = await Product.find({
         $or: [
           { name: { $regex: new RegExp(searchTerm, 'i') } }, // Búsqueda por nombre (uso regex para que sea insensible a mayúsculas o minúsculas)
-          { _id: searchTerm }, // Búsqueda por ID
+         // { _id: searchTerm }, // Búsqueda por ID
           { category: { $regex: new RegExp(searchTerm, 'i') } } // Búsqueda por categoría
         ]
       });
 
       res.json(results);
     } catch (error) {
+      console.log(error)
       res.status(500).json({ message: 'Internal server error' });
     }
+    
   },
 };
 

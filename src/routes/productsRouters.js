@@ -14,9 +14,9 @@ let controller = require('../controllers/ProductsControllers');
 router.get('/listar',logs, controller.listar);
 router.get('/detalle/:id', logs, controller.detalle);
 router.post('/crear', logs, upload.single('image'), controller.crear);
-router.put('/update', logs, controller.update);
+router.put('/update/:id', logs, controller.update);
 router.delete('/eliminar/:id', logs, controller.eliminar);
-router.get('/buscar/', logs, controller.buscar);//-accedo con query/products/buscar?nombre=cepillo
+router.get('/buscar', logs, controller.buscar);//-accedo con query/products/buscar?nombre=cepillo
 //const id = req.params.id;
 
 module.exports = router;
